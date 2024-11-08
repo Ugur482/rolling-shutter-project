@@ -27,7 +27,7 @@ dIdt = y(1);
 I = y(2);
 
 dVdt = 2*pi*V*cos(2*pi*10*t);
-
+    
 d2Idt2 = dVdt/L -R/L*dIdt -1/(C*L)*I;
 
 dydt = [d2Idt2; dIdt];
