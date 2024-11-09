@@ -89,7 +89,7 @@ end
 [t, y] = ode45(@simulate, tspan, y0);
 
 % Plot Simulation
-figure(1)
+figure('Name', 'Simulation Visual Interface','NumberTitle', 'off')
 subplot(2, 1, 1)
 plot(t, y(:, 1));
 ylabel('Angular Velocity (rad/s)')
@@ -97,4 +97,5 @@ subplot(2, 1, 2)
 plot(t, y(:, 2));
 ylabel('Motor Current (A)')
 xlabel('Time (s)')
+
 
